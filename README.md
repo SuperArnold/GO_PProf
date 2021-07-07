@@ -13,4 +13,7 @@
 * 分別對應檢視每個函數的物件數量和分配的記憶體大小，可以用traces指令來印出對應的所有呼叫堆疊以及指標資訊。<br>
 `go tool pprof http://localhost:6060/debug/pprof/goroutine`
 
-* 分別對應檢視每個函數的物件數量和分配的記憶體大小，可以用traces指令來印出對應的所有呼叫堆疊以及指標資訊。<br>
+* 發生互斥鎖時，可以透過下面方法找出互斥量的分析。<br>
+`go tool pprof http://localhost:6061/debug/pprof/mutex`
+  * top: 檢視互斥量的排名。
+  * list: 檢視指定函數的城市情況。
