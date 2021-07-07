@@ -10,6 +10,7 @@ import (
 var datas []string
 
 func init() {
+	runtime.SetBlockProfileRate(1)
 	runtime.SetMutexProfileFraction(1)
 }
 func main() {
