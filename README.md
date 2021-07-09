@@ -34,6 +34,11 @@
   `brew install graphviz`
   * 可以查看產出的`pprof001.svg`Graph的整體函數呼叫流程
     * 框越大、線越粗、框顏色越鮮豔，則代表佔用的時間越久。
+ 
+# 透過測試案例來分析流程及函數
+* 執行`go test -bench=. -cpuprofile=cpu.profile`指令產出cpu.profile<br>
+* 執行`go test -bench=. -memprofile=mem.profile`指令產出mem.profile，對記憶體做分析<br>
+* 並且用`go tool pprof -http=:8080 cpu.profile`查看UI介面分析
 
 
   
