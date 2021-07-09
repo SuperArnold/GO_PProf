@@ -32,5 +32,8 @@
  使用`web`指令
   * 如發生failed to execute dot. Is Graphviz installed? Error: exec: "dot": executable file not found in $PATH，則需要安裝Graphviz
   `brew install graphviz`
+  * 可以查看產出的`pprof001.svg`Graph的整體函數呼叫流程
+    * 框越大、線越粗、框顏色越鮮豔，則代表佔用的時間越久。
+
 
   
