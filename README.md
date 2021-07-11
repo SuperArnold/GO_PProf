@@ -17,7 +17,7 @@
 需設定runtime.SetMutexProfileFraction(1)<br>
 `go tool pprof http://localhost:6061/debug/pprof/mutex`
   * `top`: 檢視互斥量的排名。
-  * `list main`: 檢視指定函數的程式情況。
+  * `list main`: 檢視指定main函數的程式情況。
 
 * block Profiling發生互斥鎖時，可以透過下面方法找出互斥量的分析。<br>
 需設定runtime.SetBlockProfileRate(1)<br>
