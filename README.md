@@ -39,6 +39,7 @@
 * 執行`go test -bench=. -cpuprofile=cpu.profile`指令產出cpu.profile<br>
 * 執行`go test -bench=. -memprofile=mem.profile`指令產出mem.profile，對記憶體做分析<br>
 * 並且用`go tool pprof -http=:8080 cpu.profile`查看UI介面分析
+* 如果想要比較master跟branch的效能，可以使用`benchstat -alpha 3 a.txt b.txt`
 
 
   
